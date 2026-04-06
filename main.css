@@ -1,0 +1,241 @@
+{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+	min-height:100hv;
+  	background:url(image/sport.png);
+	background-size:cover;
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+	
+
+}
+
+.person img{
+	width:300px;
+	height:270px;
+	margin-left:-1200px;
+	margin-top:-260px;
+	border: 3px solid rgb(0, 0, 0);
+}
+.logo img{
+	width:320px;
+	height:150px;
+	margin-left:860px;
+	margin-top:-160px;
+}
+.car img{
+	width:320px;
+	height:270px;
+	margin-left:-1190px;
+	margin-top:-290px;
+	border: 3px solid rgb(0, 0, 0);
+
+}
+
+.logo{
+	 background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(7px);          
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	margin-top:80px;
+	margin-left:100px;
+	margin-right: 100px;
+	text-align: center;
+	padding-left:100px;
+	padding-right:300px;
+	padding-top:20px;
+		
+}
+.logo p{
+	font-size:20px;
+	text-align: justify;
+	margin-top:20px;
+	color:white;
+	font-family:'Oswald', sans-serif;
+}
+.person{
+	 background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(7px);          
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	margin-top:80px;
+	margin-left:100px;
+	margin-right: 100px;
+	text-align: center;
+	padding-left:400px;
+	padding-right:100px;
+	padding-top:40px;
+	padding-bottom:30px;
+}
+.person p{
+	font-size:20px;
+	text-align: justify;
+	margin-top:20px;
+	color:white;
+	font-family:'Oswald', sans-serif;
+}
+.person h1{
+	text-align: justify;
+	font-family: 'Montserrat', san-serif;
+}
+.car{
+	 background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(7px);          
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	
+	margin-top:80px;
+	margin-left:100px;
+	margin-right: 100px;
+	text-align: center;
+	padding-left:400px;
+	padding-right:100px;
+	padding-top:20px;
+	padding-bottom:20px;
+
+}
+.car p{
+	font-size:20px;
+	text-align: justify;
+	margin-top:20px;
+	color:white;
+	font-family:'Oswald', sans-serif;
+}
+.car h1{
+	text-align: justify;
+	font-family: 'Montserrat', san-serif;
+}
+.about{
+   
+  background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(7px);          
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	font-size:20px;
+	margin-bottom:-20px;
+	margin-top:100px;
+	margin-left:100px;
+	margin-right: 100px;
+	text-align: center;
+	padding-left:100px;
+	padding-right:100px;
+	padding-top:-60px;
+
+	
+}
+.about h1{
+	font-size:60px;
+	font-family: 'Montserrat', san-serif;
+	font-weight:700;
+	letter-spacing:3px;
+}
+
+.about p{
+	font-size:20px;
+	text-align: center;
+	margin-top:20px;
+	color:white;
+	font-family:'Oswald', sans-serif;
+}
+.main_content .right{
+	padding:0;
+	
+}
+.right img{
+	width:200px;
+	height:200px;
+	margin-left:;
+	margin-right:1000;
+	margin-bottom:100px;
+	margin-top:-1900px;
+}
+
+nav {
+    
+   
+    justify-content: space-between;
+    margin-left: 850px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    padding: 0.4rem;      
+    list-style: none;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);          
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+ul{
+	list-style:none;
+	
+}
+ul li {
+    gap:8em;
+    display: inline-block;
+    margin-right:-40px; 
+    padding-top:-10px;
+    width: 150px;
+    height:0;
+    opacity: 0.9;
+    font-size: 15px;
+    font-family:'Poppins', sans-serif;
+    font-weight: 600;
+    transition: 0.8s;
+    
+    
+} 
+ul li:hover{
+	color:#ffffff;
+}
+ul li a{
+	text-decoration:none;
+	color:white;
+	background-color:none;
+	padding:5px 10px;
+	transition:0.3s ease;
+	border-radius:30px;
+}
+ul li a:hover{
+	background-color:#ffdf00;
+	box-shadow:0 0 25px  #ffdf00;
+
+}
+ul li ul li{
+	display:none;
+}
+ul li:hover ul li{
+	display:block;
+}
+.button{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding-top:20px;
+
+}
+.modal-btn{
+	padding:15px 30px;
+	font-size:20px;
+	text-decoration:none;
+	color:white;
+	padding: 12px 25px;
+  	background: black;
+  	color: white;		
+	border-radius: 8px;
+  	text-decoration: none;
+
+	transition:box-shadow 0.3s ease, transform 0.3s ease;
+}
+.modal-btn:hover{
+	box-shadow: 0 10px 20px rgba(255, 0, 102, 0.5);
+	transform: translateY(-3px);
+}

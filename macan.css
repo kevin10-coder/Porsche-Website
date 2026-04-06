@@ -1,0 +1,645 @@
+
+
+body{
+	
+  	background:url(image/car1.png);
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+	
+
+}
+.main_content .right{
+	padding:0;
+	
+}
+.right img{
+	width:200px;
+	height:200px;
+	margin-left:;
+	margin-right:1290;
+	margin-bottom:100px;
+	margin-top:-900px;
+
+}
+
+
+nav {
+    
+   
+    justify-content: space-between;
+    margin-left: 860px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    padding: 0.4rem;      
+    list-style: none;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);          
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+ul{
+	list-style:none;
+	
+}
+ul li {
+    gap:8em;
+    display: inline-block;
+    margin-right:-40px; 
+    padding-top:-10px;
+    width: 145px;
+    height:0;
+    opacity: 0.9;
+    font-size: 15px;
+    font-family:'Poppins', sans-serif;
+    font-weight: 600;
+    transition: 0.8s;
+    
+    
+} 
+ul li:hover{
+	color:#ffffff;
+}
+ul li a{
+	text-decoration:none;
+	color:white;
+	background-color:none;
+	padding:5px 10px;
+	transition:0.3s ease;
+	border-radius:30px;
+}
+ul li a:hover{
+	background-color:#ffdf00;
+	box-shadow:0 0 25px  #ffdf00;
+
+}
+ul li ul li{
+	display:none;
+}
+ul li:hover ul li{
+	display:block;
+}
+.main_content .left{
+	width:50%;
+	height:50%;
+}
+.left h1{
+	text-align:fixed;
+	font-size: 55px;
+	font-weight: 600;
+	margin-bottom:20px;
+	margin-left:300px;
+	line-height:60px;
+	color:white;
+}
+.left h1 span{
+	color:gold;
+}
+.dropdown {
+  position: relative;
+}
+ .dropdown-menu {
+  position: absolute;
+  top: 60px;
+
+  right: -190px;
+  width: 420px;
+  padding: 24px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  background-color:black;
+  color: white;
+  font-size: 14px;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.dropdown-menu li a:hover {
+  background: rgba(255, 212, 0, 0.15);
+  color: #ffd400;
+  border-radius: 12px;
+}
+.btns{
+	display:flex;	
+}
+.btn{
+	padding: 0.5rem 1.5rem;
+	border-radius: 30px;
+	font-weight: 600;
+	font-size: 1rem;
+	background: #ffd700;
+	color: #0f172a;
+	box-shadow: 0 0 15px #c09f6a;
+	border: none;
+	cursor:pointer;
+	transition:0.3s ease;
+	margin-top:-10px;
+	margin-bottom:10px;
+	margin-left:40px;
+}
+.btn:hover{
+	background: #ffdf00;
+	box-shadow: 0 0 25px  #ffdf00;
+}
+
+.socials{
+	
+	display: flex;
+	gap: 10px;
+	position:fixed;
+	bottom:-10px;
+	left: 630px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;	
+	z-index: 1000;
+}
+
+.socials a{
+	background-color:transparent;
+	padding:1em;
+	border-radius:50%;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	height: 45px;
+	width: 45px;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	display: grid;
+	place-items: center;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+
+}
+.socials a svg{
+	height: 20px;
+	margin-top:-5px;
+}
+.socials a::before{
+	content:attr(data-social);
+	position: absolute;
+	margin-bottom:-15px;
+	background-color: var(--accent-color);
+	color:white;
+	text-decoration: none;
+	padding: 0.3em 1em;
+	border-radius: 20px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+	transform: translateY(-30px) rotate(25deg);
+	opacity: 0;
+	transition: 200ms ease;
+}
+.socials a:hover{
+	background-color: var(--accent-color);
+	fill: white;
+}
+.socials a::after{
+	content: '';
+	position: absolute;
+	height: 0;
+	width:0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 15px solid var(--accent-color);
+	transform: translateY(0) rotate(25deg);
+	opacity: 0;
+	transition: 200ms ease;
+}
+.socials a:hover::before{
+	transform: translateY(-65px) rotate(0);
+	opacity: 1;
+}
+.socials a:hover::after{
+	transform: translateY(-42px) rotate(0);
+	opacity: 1;
+}
+	
+	
+
+.container {
+	max-width: 1200px; 
+	margin: auto; 
+	text-align: center; 
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius:30px;
+	
+} 
+h1 { 
+	font-family: 'Montserrat', san-serif;
+	margin-bottom: 40px; 
+	padding-top:20px;
+	color:white; 
+}
+ .card-wrapper { 
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: center; 
+	gap: 30px; 
+}
+.card {
+background: linear-gradient(
+  135deg,
+  #6b1f4e,
+  #8a2f6d,
+  #5a1b4f
+); 
+	border-radius: 12px; 
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+	padding: 20px; 
+	width: 300px; 
+	transition: transform 0.3s ease;
+ } 
+.card:hover { 
+	transform: translateY(-5px); 
+} 
+.card img { 
+	width: 100%; 
+	border-radius: 8px; 
+	margin-bottom: 15px; 
+	
+} 
+.paragraph h1{
+	font-family:'Roboto', sans-serif;
+	color:black;
+	font-size:13px;
+	font-weight:400;
+	padding:0;
+}
+.card h2 { 
+	color: black; 
+	margin-bottom: 10px; 
+	font-family: 'Montserrat', san-serif;
+}
+h2{
+	font-family: 'Montserrat', san-serif;
+	
+}
+.tags {
+	display: block;
+  	gap: 10px;
+  	flex-wrap: wrap;
+  	margin-bottom: 24px;
+}
+
+.tags span {
+  	font-size: 12px;
+  	padding: 6px 12px;
+  	background: #d4d4d4;
+  	border-radius: 8px;
+}
+.letter{
+	color:white;
+	margin-bottom: 10px; 
+
+}
+.specs div {
+  	margin-bottom: 18px;
+	display: grid;
+	color:black;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 40px;
+	text-align: center;
+}
+
+.specs strong {
+  	font-size: 22px;
+	font-weight:600;
+  	display: block;
+}
+
+.specs p {
+	
+  	font-size: 13px;
+  	color: black;
+	margin-top:4px;
+}
+.buttons button { 
+	background: #000;
+	color: #fff; 
+	border: none; 
+	padding: 10px 16px; 
+	margin: 5px; 
+	border-radius: 6px;
+ 	cursor: pointer; 
+	font-weight: bold; 
+} 
+.buttons button:hover { 
+	background-color: #a00; 
+}
+.modal {
+  	position: fixed;
+  	inset: 0;
+  	background: rgba(0, 0, 0, 0.65);
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	opacity: 0;
+  	pointer-events: none;
+  	transition: 0.3s ease;
+  	z-index: 9999;
+}
+
+
+.modal:target {
+  	opacity: 1;
+  	pointer-events: auto;
+}
+
+
+.modal-content {
+    background-color:rgba(211, 211, 211, 0.9);
+  	width: 600px;
+  	padding: 25px;
+  	border-radius: 20px;
+  	text-align: center;
+  	position: relative;
+  	animation: zoom 0.3s ease;
+}
+
+
+.modal-img {
+  	width: 100%;
+  	border-radius: 12px;
+ 	margin-bottom: 15px;
+}
+
+
+.close {
+  	position: absolute;
+  	top: 12px;
+  	right: 18px;
+  	font-size: 26px;
+  	text-decoration: none;
+  	color: #000;
+}
+
+
+.modal-btn {
+  	display: inline-block;
+  	margin-top: 15px;
+  	padding: 12px 25px;
+  	background: black;
+  	color: white;		
+	border-radius: 8px;
+  	text-decoration: none;
+}
+
+
+.select-model {
+  	padding: 10px 16px;
+  	background: black;
+  	color: white;
+  	border-radius: 6px;
+  	text-decoration: none;
+  	display: inline-block;
+}
+
+
+
+@keyframes zoom {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.slider {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.slider input {
+  display: none;
+}
+
+.slider .slides {
+  position: relative;
+  height:300px;
+}
+
+
+.slider .slide {
+ position: absolute;
+ top:0;
+ left:0;
+  width: 100%;
+  border-radius: 12px;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 0.5s ease-in-out;
+}
+#mc1:checked ~ .slides .mc1,
+#mc2:checked ~ .slides .mc2,
+#mc3:checked ~ .slides .mc3,
+#mc4:checked ~ .slides .mc4,
+#mc5:checked ~ .slides .mc5,
+#mc6:checked ~ .slides .mc6,
+#mc7:checked ~ .slides .mc7, 
+#mc8:checked ~ .slides .mc8 {
+  opacity: 1;
+  pointer-event:auto;
+  z-index: 1;
+}
+#m4c1:checked ~ .slides .m4c1,
+#m4c2:checked ~ .slides .m4c2,
+#m4c3:checked ~ .slides .m4c3,
+#m4c4:checked ~ .slides .m4c4,
+#m4c5:checked ~ .slides .m4c5,
+#m4c6:checked ~ .slides .m4c6,
+#m4c7:checked ~ .slides .m4c7, 
+#m4c8:checked ~ .slides .m4c8 {
+  opacity: 1;
+  pointer-event:auto;
+  z-index: 1;
+}
+#m4s1:checked ~ .slides .m4s1,
+#m4s2:checked ~ .slides .m4s2,
+#m4s3:checked ~ .slides .m4s3,
+#m4s4:checked ~ .slides .m4s4,
+#m4s5:checked ~ .slides .m4s5,
+#m4s6:checked ~ .slides .m4s6,
+#m4s7:checked ~ .slides .m4s7, 
+#m4s8:checked ~ .slides .m4s8 {
+  opacity: 1;
+  pointer-event:auto;
+  z-index: 1;
+}
+#mgts1:checked ~ .slides .mgts1,
+#mgts2:checked ~ .slides .mgts2,
+#mgts3:checked ~ .slides .mgts3,
+#mgts4:checked ~ .slides .mgts4,
+#mgts5:checked ~ .slides .mgts5,
+#mgts6:checked ~ .slides .mgts6,
+#mgts7:checked ~ .slides .mgts7, 
+#mgts8:checked ~ .slides .mgts8 {
+  opacity: 1;
+  pointer-event:auto;
+  z-index: 1;
+}
+#mtur1:checked ~ .slides .mtur1,
+#mtur2:checked ~ .slides .mtur2,
+#mtur3:checked ~ .slides .mtur3,
+#mtur4:checked ~ .slides .mtur4,
+#mtur5:checked ~ .slides .mtur5,
+#mtur6:checked ~ .slides .mtur6,
+#mtur7:checked ~ .slides .mtur7, 
+#mtur8:checked ~ .slides .mtur8 {
+  opacity: 1;
+  pointer-event:auto;
+  z-index: 1;
+}
+.slider .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  color: grey;
+  font-size: 26px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  display: none;
+  z-index: 10;
+  transition: 0.3s ease;
+}
+
+.slider .arrow:hover {
+
+}
+
+.slider .prev {
+  left: 12px;
+}
+
+.slider .next {
+  right: 12px;
+}
+
+
+#mc1:checked ~ .prev.mc1,
+#mc1:checked ~ .next.mc1,
+#mc2:checked ~ .prev.mc2,
+#mc2:checked ~ .next.mc2,
+#mc3:checked ~ .prev.mc3,
+#mc3:checked ~ .next.mc3,
+#mc4:checked ~ .prev.mc4,
+#mc4:checked ~ .next.mc4,
+#mc5:checked ~ .prev.mc5,
+#mc5:checked ~ .next.mc5,
+#mc6:checked ~ .prev.mc6,
+#mc6:checked ~ .next.mc6,
+#mc7:checked ~ .prev.mc7,
+#mc7:checked ~ .next.mc7,
+#mc8:checked ~ .prev.mc8,
+#mc8:checked ~ .next.mc8
+{
+   display: block;
+}
+#m4c1:checked ~ .prev.m4c1,
+#m4c1:checked ~ .next.m4c1,
+#m4c2:checked ~ .prev.m4c2,
+#m4c2:checked ~ .next.m4c2,
+#m4c3:checked ~ .prev.m4c3,
+#m4c3:checked ~ .next.m4c3,
+#m4c4:checked ~ .prev.m4c4,
+#m4c4:checked ~ .next.m4c4,
+#m4c5:checked ~ .prev.m4c5,
+#m4c5:checked ~ .next.m4c5,
+#m4c6:checked ~ .prev.m4c6,
+#m4c6:checked ~ .next.m4c6,
+#m4c7:checked ~ .prev.m4c7,
+#m4c7:checked ~ .next.m4c7,
+#m4c8:checked ~ .prev.m4c8,
+#m4c8:checked ~ .next.m4c8
+{
+   display: block;
+}
+#m4s1:checked ~ .prev.m4s1,
+#m4s1:checked ~ .next.m4s1,
+#m4s2:checked ~ .prev.m4s2,
+#m4s2:checked ~ .next.m4s2,
+#m4s3:checked ~ .prev.m4s3,
+#m4s3:checked ~ .next.m4s3,
+#m4s4:checked ~ .prev.m4s4,
+#m4s4:checked ~ .next.m4s4,
+#m4s5:checked ~ .prev.m4s5,
+#m4s5:checked ~ .next.m4s5,
+#m4s6:checked ~ .prev.m4s6,
+#m4s6:checked ~ .next.m4s6,
+#m4s7:checked ~ .prev.m4s7,
+#m4s7:checked ~ .next.m4s7,
+#m4s8:checked ~ .prev.m4s8,
+#m4s8:checked ~ .next.m4s8
+{
+   display: block;
+}
+#mgts1:checked ~ .prev.mgts1,
+#mgts1:checked ~ .next.mgts1,
+#mgts2:checked ~ .prev.mgts2,
+#mgts2:checked ~ .next.mgts2,
+#mgts3:checked ~ .prev.mgts3,
+#mgts3:checked ~ .next.mgts3,
+#mgts4:checked ~ .prev.mgts4,
+#mgts4:checked ~ .next.mgts4,
+#mgts5:checked ~ .prev.mgts5,
+#mgts5:checked ~ .next.mgts5,
+#mgts6:checked ~ .prev.mgts6,
+#mgts6:checked ~ .next.mgts6,
+#mgts7:checked ~ .prev.mgts7,
+#mgts7:checked ~ .next.mgts7,
+#mgts8:checked ~ .prev.mgts8,
+#mgts8:checked ~ .next.mgts8
+{
+   display: block;
+}
+#mtur1:checked ~ .prev.mtur1,
+#mtur1:checked ~ .next.mtur1,
+#mtur2:checked ~ .prev.mtur2,
+#mtur2:checked ~ .next.mtur2,
+#mtur3:checked ~ .prev.mtur3,
+#mtur3:checked ~ .next.mtur3,
+#mtur4:checked ~ .prev.mtur4,
+#mtur4:checked ~ .next.mtur4,
+#mtur5:checked ~ .prev.mtur5,
+#mtur5:checked ~ .next.mtur5,
+#mtur6:checked ~ .prev.mtur6,
+#mtur6:checked ~ .next.mtur6,
+#mtur7:checked ~ .prev.mtur7,
+#mtur7:checked ~ .next.mtur7,
+#mtur8:checked ~ .prev.mtur8,
+#mtur8:checked ~ .next.mtur8
+{
+   display: block;
+}

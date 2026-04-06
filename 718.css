@@ -1,0 +1,563 @@
+
+
+body{
+	
+  	background:url(image/car1.png);
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+	
+
+}
+.main_content .right{
+	padding:0;
+	
+}
+.right img{
+	width:200px;
+	height:200px;
+	margin-left:;
+	margin-right:1290;
+	margin-bottom:100px;
+	margin-top:-1220px;
+
+}
+
+nav {
+    
+   
+    justify-content: space-between;
+    margin-left: 860px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    padding: 0.4rem;      
+    list-style: none;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);          
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+ul{
+	list-style:none;
+	
+}
+ul li {
+    gap:8em;
+    display: inline-block;
+    margin-right:-40px; 
+    padding-top:-10px;
+    width: 145px;
+    height:0;
+    opacity: 0.9;
+    font-size: 15px;
+    font-family:'Poppins', sans-serif;
+    font-weight: 600;
+    transition: 0.8s;
+    
+    
+} 
+ul li:hover{
+	color:#ffffff;
+}
+ul li a{
+	text-decoration:none;
+	color:white;
+	background-color:none;
+	padding:5px 10px;
+	transition:0.3s ease;
+	border-radius:30px;
+}
+ul li a:hover{
+	background-color:#ffdf00;
+	box-shadow:0 0 25px  #ffdf00;
+
+}
+ul li ul li{
+	display:none;
+}
+ul li:hover ul li{
+	display:block;
+}
+.main_content .left{
+	width:50%;
+	height:50%;
+}
+.left h1{
+	text-align:fixed;
+	font-size: 55px;
+	font-weight: 600;
+	margin-bottom:20px;
+	margin-left:300px;
+	line-height:60px;
+	color:white;
+}
+.left h1 span{
+	color:gold;
+}
+.btns{
+	display:flex;	
+}
+.btn{
+	padding: 0.5rem 1.5rem;
+	border-radius: 30px;
+	font-weight: 600;
+	font-size: 1rem;
+	background: #ffd700;
+	color: #0f172a;
+	box-shadow: 0 0 15px #c09f6a;
+	border: none;
+	cursor:pointer;
+	transition:0.3s ease;
+	margin-top:-10px;
+	margin-bottom:10px;
+	margin-left:40px;
+}
+.btn:hover{
+	background: #ffdf00;
+	box-shadow: 0 0 25px  #ffdf00;
+}
+
+.socials{
+	
+	display: flex;
+	gap: 10px;
+	position:fixed;
+	bottom:-10px;
+	left: 630px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;	
+	z-index: 1000;
+}		
+.container {
+	max-width: 1200px; 
+	margin: auto; 
+	text-align: center; 
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius:30px;
+	
+} 
+h1 { 
+	font-family: 'Montserrat', san-serif;
+	padding-top:30px;
+	margin-bottom: 40px; 
+	color:white; 
+}
+ .card-wrapper { 
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: center; 
+	gap: 30px; 
+}
+.card {
+background: linear-gradient(
+  135deg,
+  #6b1f4e,
+  #8a2f6d,
+  #5a1b4f
+); 
+	border-radius: 12px; 
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+	padding: 20px; 
+	width: 300px; 
+	transition: transform 0.3s ease;
+ } 
+.card:hover { 
+	transform: translateY(-5px); 
+} 
+.card img { 
+	width: 100%; 
+	border-radius: 8px; 
+	margin-bottom: 15px; 
+	
+} 
+.paragraph h1{
+	font-family:'Roboto', sans-serif;
+	color:black;
+	font-size:13px;
+	font-weight:400;
+	padding:0;
+}
+.card h2 { 
+	color: black; 
+	margin-bottom: 10px; 
+	font-family: 'Montserrat', san-serif;
+}
+.tags {
+	display: block;
+  	gap: 10px;
+  	flex-wrap: wrap;
+  	margin-bottom: 24px;
+}
+
+.tags span {
+  	font-size: 12px;
+  	padding: 6px 12px;
+  	background: #d4d4d4;
+  	border-radius: 8px;
+}
+.letter{
+	color:white;
+	margin-bottom: 10px; 
+
+}
+.specs div {
+  	margin-bottom: 18px;
+	display: grid;
+	color:black;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 40px;
+	text-align: center;
+}
+
+.specs strong {
+  	font-size: 22px;
+	font-weight:600;
+  	display: block;
+}
+
+.specs p {
+	
+  	font-size: 13px;
+  	color: black;
+	margin-top:4px;
+}
+.buttons button { 
+	background: #000;
+	color: #fff; 
+	border: none; 
+	padding: 10px 16px; 
+	margin: 5px; 
+	border-radius: 6px;
+ 	cursor: pointer; 
+	font-weight: bold; 
+} 
+.buttons button:hover { 
+	background-color: #a00; 
+}
+.modal {
+  	position: fixed;
+  	inset: 0;
+  	background: rgba(0, 0, 0, 0.65);
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	opacity: 0;
+  	pointer-events: none;
+  	transition: 0.3s ease;
+  	z-index: 9999;
+}
+
+
+.modal:target {
+  	opacity: 1;
+  	pointer-events: auto;
+}
+
+
+.modal-content {
+    background-color:rgba(211, 211, 211, 0.9);
+  	width: 600px;
+  	padding: 25px;
+  	border-radius: 20px;
+  	text-align: center;
+  	position: relative;
+  	animation: zoom 0.3s ease;
+}
+
+
+.modal-img {
+  	width: 100%;
+  	border-radius: 12px;
+ 	margin-bottom: 15px;
+}
+
+
+.close {
+  	position: absolute;
+  	top: 12px;
+  	right: 18px;
+  	font-size: 26px;
+  	text-decoration: none;
+  	color: #000;
+}
+
+
+.modal-btn {
+  	display: inline-block;
+  	margin-top: 15px;
+  	padding: 12px 25px;
+  	background: black;
+  	color: white;		
+	border-radius: 8px;
+  	text-decoration: none;
+}
+
+
+.select-model {
+  	padding: 10px 16px;
+  	background: black;
+  	color: white;
+  	border-radius: 6px;
+  	text-decoration: none;
+  	display: inline-block;
+}
+
+
+
+@keyframes zoom {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.slider {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.slider input {
+  display: none;
+}
+
+.slider .slides {
+  position: relative;
+  height:300px;
+}
+
+
+.slider .slide {
+ position: absolute;
+ top:0;
+ left:0;
+  width: 100%;
+  border-radius: 12px;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 0.5s ease-in-out;
+}
+#cm1:checked ~ .slides .cm1,
+#cm2:checked ~ .slides .cm2,
+#cm3:checked ~ .slides .cm3,
+#cm4:checked ~ .slides .cm4,
+#cm5:checked ~ .slides .cm5,
+#cm6:checked ~ .slides .cm6,
+#cm7:checked ~ .slides .cm7, 
+#cm8:checked ~ .slides .cm8 {
+  opacity: 1;
+  pointer-event:auto;
+  z-index: 1;
+}
+#bx1:checked ~ .slides .bx1,
+#bx2:checked ~ .slides .bx2,
+#bx3:checked ~ .slides .bx3,
+#bx4:checked ~ .slides .bx4,
+#bx5:checked ~ .slides .bx5,
+#bx6:checked ~ .slides .bx6,
+#bx7:checked ~ .slides .bx7, 
+#bx8:checked ~ .slides .bx8 {
+  opacity: 1;
+  pointer-event:auto;
+  z-index: 1;
+}
+#cse1:checked ~ .slides .cse1,
+#cse2:checked ~ .slides .cse2,
+#cse3:checked ~ .slides .cse3,
+#cse4:checked ~ .slides .cse4,
+#cse5:checked ~ .slides .cse5,
+#cse6:checked ~ .slides .cse6,
+#cse7:checked ~ .slides .cse7, 
+#cse8:checked ~ .slides .cse8 {
+  opacity: 1;
+  pointer-event:auto;
+  z-index: 1;
+}
+#bse1:checked ~ .slides .bse1,
+#bse2:checked ~ .slides .bse2,
+#bse3:checked ~ .slides .bse3,
+#bse4:checked ~ .slides .bse4,
+#bse5:checked ~ .slides .bse5,
+#bse6:checked ~ .slides .bse6,
+#bse7:checked ~ .slides .bse7, 
+#bse8:checked ~ .slides .bse8 {
+  opacity: 1;
+  pointer-event:auto;
+  z-index: 1;
+}
+#cms1:checked ~ .slides .cms1,
+#cms2:checked ~ .slides .cms2,
+#cms3:checked ~ .slides .cms3,
+#cms4:checked ~ .slides .cms4,
+#cms5:checked ~ .slides .cms5,
+#cms6:checked ~ .slides .cms6,
+#cms7:checked ~ .slides .cms7, 
+#cms8:checked ~ .slides .cms8 {
+  opacity: 1;
+  pointer-event:auto;
+  z-index: 1;
+}
+#bs1:checked ~ .slides .bs1,
+#bs2:checked ~ .slides .bs2,
+#bs3:checked ~ .slides .bs3,
+#bs4:checked ~ .slides .bs4,
+#bs5:checked ~ .slides .bs5,
+#bs6:checked ~ .slides .bs6,
+#bs7:checked ~ .slides .bs7, 
+#bs8:checked ~ .slides .bs8 {
+  opacity: 1;
+  pointer-event:auto;
+  z-index: 1;
+}
+.slider .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  color: grey;
+  font-size: 26px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  display: none;
+  z-index: 10;
+  transition: 0.3s ease;
+}
+
+.slider .arrow:hover {
+
+}
+
+.slider .prev {
+  left: 12px;
+}
+
+.slider .next {
+  right: 12px;
+}
+
+
+#cm1:checked ~ .prev.cm1,
+#cm1:checked ~ .next.cm1,
+#cm2:checked ~ .prev.cm2,
+#cm2:checked ~ .next.cm2,
+#cm3:checked ~ .prev.cm3,
+#cm3:checked ~ .next.cm3,
+#cm4:checked ~ .prev.cm4,
+#cm4:checked ~ .next.cm4,
+#cm5:checked ~ .prev.cm5,
+#cm5:checked ~ .next.cm5,
+#cm6:checked ~ .prev.cm6,
+#cm6:checked ~ .next.cm6,
+#cm7:checked ~ .prev.cm7,
+#cm7:checked ~ .next.cm7,
+#cm8:checked ~ .prev.cm8,
+#cm8:checked ~ .next.cm8
+{
+   display: block;
+}
+#bx1:checked ~ .prev.bx1,
+#bx1:checked ~ .next.bx1,
+#bx2:checked ~ .prev.bx2,
+#bx2:checked ~ .next.bx2,
+#bx3:checked ~ .prev.bx3,
+#bx3:checked ~ .next.bx3,
+#bx4:checked ~ .prev.bx4,
+#bx4:checked ~ .next.bx4,
+#bx5:checked ~ .prev.bx5,
+#bx5:checked ~ .next.bx5,
+#bx6:checked ~ .prev.bx6,
+#bx6:checked ~ .next.bx6,
+#bx7:checked ~ .prev.bx7,
+#bx7:checked ~ .next.bx7,
+#bx8:checked ~ .prev.bx8,
+#bx8:checked ~ .next.bx8
+{
+   display: block;
+}
+#cse1:checked ~ .prev.cse1,
+#cse1:checked ~ .next.cse1,
+#cse2:checked ~ .prev.cse2,
+#cse2:checked ~ .next.cse2,
+#cse3:checked ~ .prev.cse3,
+#cse3:checked ~ .next.cse3,
+#cse4:checked ~ .prev.cse4,
+#cse4:checked ~ .next.cse4,
+#cse5:checked ~ .prev.cse5,
+#cse5:checked ~ .next.cse5,
+#cse6:checked ~ .prev.cse6,
+#cse6:checked ~ .next.cse6,
+#cse7:checked ~ .prev.cse7,
+#cse7:checked ~ .next.cse7,
+#cse8:checked ~ .prev.cse8,
+#cse8:checked ~ .next.cse8
+{
+   display: block;
+}
+#bse1:checked ~ .prev.bse1,
+#bse1:checked ~ .next.bse1,
+#bse2:checked ~ .prev.bse2,
+#bse2:checked ~ .next.bse2,
+#bse3:checked ~ .prev.bse3,
+#bse3:checked ~ .next.bse3,
+#bse4:checked ~ .prev.bse4,
+#bse4:checked ~ .next.bse4,
+#bse5:checked ~ .prev.bse5,
+#bse5:checked ~ .next.bse5,
+#bse6:checked ~ .prev.bse6,
+#bse6:checked ~ .next.bse6,
+#bse7:checked ~ .prev.bse7,
+#bse7:checked ~ .next.bse7,
+#bse8:checked ~ .prev.bse8,
+#bse8:checked ~ .next.bse8
+{
+   display: block;
+}
+#cms1:checked ~ .prev.cms1,
+#cms1:checked ~ .next.cms1,
+#cms2:checked ~ .prev.cms2,
+#cms2:checked ~ .next.cms2,
+#cms3:checked ~ .prev.cms3,
+#cms3:checked ~ .next.cms3,
+#cms4:checked ~ .prev.cms4,
+#cms4:checked ~ .next.cms4,
+#cms5:checked ~ .prev.cms5,
+#cms5:checked ~ .next.cms5,
+#cms6:checked ~ .prev.cms6,
+#cms6:checked ~ .next.cms6,
+#cms7:checked ~ .prev.cms7,
+#cms7:checked ~ .next.cms7,
+#cms8:checked ~ .prev.cms8,
+#cms8:checked ~ .next.cms8
+{
+   display: block;
+}
+#bs1:checked ~ .prev.bs1,
+#bs1:checked ~ .next.bs1,
+#bs2:checked ~ .prev.bs2,
+#bs2:checked ~ .next.bs2,
+#bs3:checked ~ .prev.bs3,
+#bs3:checked ~ .next.bs3,
+#bs4:checked ~ .prev.bs4,
+#bs4:checked ~ .next.bs4,
+#bs5:checked ~ .prev.bs5,
+#bs5:checked ~ .next.bs5,
+#bs6:checked ~ .prev.bs6,
+#bs6:checked ~ .next.bs6,
+#bs7:checked ~ .prev.bs7,
+#bs7:checked ~ .next.bs7,
+#bs8:checked ~ .prev.bs8,
+#bs8:checked ~ .next.bs8
+{
+   display: block;
+}
